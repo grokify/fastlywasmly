@@ -40,15 +40,14 @@ func BuildEdgePackage(tomlfile, wasmfile, bindir string) (string, error) {
 
 func buildEdgePackageFiles(tomlfile, wasmfile, bindir string) (string, map[string]string, error) {
 	files := map[string]string{}
-	var packageNameSanitized string
 	fileExists, err := osutil.IsFile(tomlfile, true)
 	if err != nil {
-		return packageNameSanitized, files, err
+		return "", files, err
 	}
 	if !fileExists {
-		return packageNameSanitized, files, ErrFileZeroSize
+		return "", files, ErrFileZeroSize
 	}
-	packageNameSanitized, err = ManifestPackageNameSanitized(tomlfile)
+	packageNameSanitized, err := ManifestPackageNameSanitized(tomlfile)
 	if err != nil {
 		return packageNameSanitized, files, err
 	}
