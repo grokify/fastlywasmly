@@ -24,7 +24,7 @@ It builds the tarball filename and internal folder structure using the same same
 % go install github.com/grokify/fastlywasmly
 ```
 
-## Usage
+## Usage as CLI
 
 Loading with WASM file:
 
@@ -36,4 +36,27 @@ Loading with bin dir (including WASM file):
 
 ```bash
 % fastlywasmly -t /path/to/fastly.toml -b /path/to/bin
+```
+
+## Usage as Library
+
+```go
+package main
+
+import (
+    "fmt"
+
+    "github.com/grokify/fastlywasmly/tarutil"
+)
+
+func main() {
+    outfile, err := tarutil.BuildEdgePackage(
+        "/path/to/fastly.toml",
+        "/path/to/anything.wasm or empty if using bindir only",
+        "/path/to/option/bin/dir or empty if using wasm only")
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("WROTE [%s]\n", outfile)
+}
 ```
