@@ -5,7 +5,7 @@
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![License][license-svg]][license-url]
 
- [build-status-svg]: https://github.com/grokify/fastlywasmly/workflows/test/badge.svg?branch=master
+ [build-status-svg]: https://github.com/grokify/fastlywasmly/workflows/test/badge.svg?branch=main
  [build-status-url]: https://github.com/grokify/fastlywasmly/actions/workflows/go_build.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/fastlywasmly
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/fastlywasmly
