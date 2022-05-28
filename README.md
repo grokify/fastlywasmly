@@ -18,13 +18,15 @@
 
 It builds the tarball filename and internal folder structure using the same same approach as Fastly CLI.
 
-## Installation
+## Usage as CLI
+
+### Installation
 
 ```bash
 % go install github.com/grokify/fastlywasmly
 ```
 
-## Usage as CLI
+### Usage
 
 Loading with WASM file:
 
@@ -39,6 +41,14 @@ Loading with bin dir (including WASM file):
 ```
 
 ## Usage as Library
+
+### Installation
+
+```bash
+% go get github.com/grokify/fastlywasmly
+```
+
+### Usage
 
 ```go
 package main
