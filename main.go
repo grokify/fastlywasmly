@@ -8,33 +8,17 @@ import (
 	"github.com/grokify/fastlywasmly/tarutil"
 )
 
-const (
-	wasmfileArchivePath = "package/bin/main.wasm"
-	tomlArchivePath     = "package/fastly.toml"
-	outfileDefault      = "package.tar.gz"
-)
-
 func main() {
-	wasmfile := flag.String("w", "", "WASM filepath")
-	// bindir := flag.String("b", "", "binary directory")
 	tomlfile := flag.String("t", "", "binary directory")
-	outfile := flag.String("o", "", "output .tar.gz file")
+	wasmfile := flag.String("w", "", "WASM filepath")
+	bindir := flag.String("b", "", "binary directory")
+
 	flag.Parse()
 
-	files := map[string]string{}
-
-	if len(*wasmfile) > 0 {
-		files[*wasmfile] = wasmfileArchivePath
-	}
-	if len(*tomlfile) > 0 {
-		files[*tomlfile] = tomlArchivePath
-	}
-	if len(*outfile) == 0 {
-		*outfile = outfileDefault
-	}
-	err := tarutil.CreateArchiveGzipFile(*outfile, files)
+	outfile, err := tarutil.BuildEdgePackage(*tomlfile, *wasmfile, *bindir)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("WROTE [%s]\n", *outfile)
+
+	fmt.Printf("WROTE [%s]\n", outfile)
 }
