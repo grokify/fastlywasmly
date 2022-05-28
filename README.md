@@ -35,5 +35,5 @@ Loading with WASM file:
 Loading with bin dir (including WASM file):
 
 ```bash
-% fastlywasmly -5 /path/to/fastly.toml -b /path/to/bin
+% fastlywasmly -t /path/to/fastly.toml -b /path/to/bin
 ```
