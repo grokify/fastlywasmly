@@ -17,3 +17,23 @@
 `fastlywasmly` is a CLI app that will package a Fastly Compute@Edge TOML and WASM file into a Fastly tarball. It can alternately take a `bin` directly in place of the WASM file to load all the files in the directory and subdirectories.
 
 It builds the tarball filename and internal folder structure using the same same approach as Fastly CLI.
+
+## Installation
+
+```bash
+% go install github.com/grokify/fastlywasmly
+```
+
+## Usage
+
+Loading with WASM file:
+
+```bash
+% fastlywasmly -t /path/to/fastly.toml -w /path/to/yourname.wasm
+```
+
+Loading with bin dir (including WASM file):
+
+```bash
+% fastlywasmly -5 /path/to/fastly.toml -b /path/to/bin
+```
