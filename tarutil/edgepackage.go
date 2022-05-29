@@ -73,8 +73,7 @@ func buildEdgePackageFiles(tomlfile, wasmfile, bindir string) (string, map[strin
 		err = osutil.VisitFiles(bindir, func(dir string, info fs.FileInfo) error {
 			mode := info.Mode()
 			if !mode.IsDir() {
-				subdir := dir[len(bindir):]
-				subdir = strings.Trim(subdir, string(os.PathSeparator))
+				subdir := strings.Trim(dir[len(bindir):], string(os.PathSeparator))
 				if len(subdir) == 0 {
 					files[filepath.Join(dir, info.Name())] = filepath.Join(packageNameSanitized, WASMBinDir, info.Name())
 				} else {
