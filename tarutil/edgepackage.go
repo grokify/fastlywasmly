@@ -52,16 +52,7 @@ func buildEdgePackageFiles(tomlfile, wasmfile, bindir string) (string, map[strin
 		return packageNameSanitized, files, err
 	}
 	files[tomlfile] = filepath.Join(packageNameSanitized, TOMLFilename)
-	if len(wasmfile) > 0 {
-		fileExists, err := osutil.IsFile(wasmfile, true)
-		if err != nil {
-			return packageNameSanitized, files, err
-		}
-		if !fileExists {
-			return packageNameSanitized, files, ErrFileZeroSize
-		}
-		files[wasmfile] = filepath.Join(packageNameSanitized, WASMBinDir, WASMFilename)
-	}
+
 	if len(bindir) > 0 {
 		dirExists, err := osutil.IsDir(bindir)
 		if err != nil {
@@ -86,6 +77,18 @@ func buildEdgePackageFiles(tomlfile, wasmfile, bindir string) (string, map[strin
 			return packageNameSanitized, files, err
 		}
 	}
+
+	if len(wasmfile) > 0 {
+		fileExists, err := osutil.IsFile(wasmfile, true)
+		if err != nil {
+			return packageNameSanitized, files, err
+		}
+		if !fileExists {
+			return packageNameSanitized, files, ErrFileZeroSize
+		}
+		files[wasmfile] = filepath.Join(packageNameSanitized, WASMBinDir, WASMFilename)
+	}
+
 	return packageNameSanitized, files, nil
 }
 
