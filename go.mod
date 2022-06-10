@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.39.6
+	github.com/grokify/mogo v0.39.8
 	github.com/kennygrant/sanitize v1.2.4
 )
 
@@ -23,7 +23,7 @@ require (
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/peterhellberg/link v1.1.0 // indirect
 	github.com/segmentio/textio v1.2.0 // indirect
-	golang.org/x/net v0.0.0-20220526153639-5463443f8c37 // indirect
+	golang.org/x/net v0.0.0-20220607020251-c690dde0001d // indirect
 	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a // indirect
 	golang.org/x/term v0.0.0-20220526004731-065cf7ba2467 // indirect
 )
