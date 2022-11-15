@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.40.10
+	github.com/grokify/mogo v0.41.1
 	github.com/kennygrant/sanitize v1.2.4
 )
 
@@ -15,7 +15,7 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/jsonapi v1.0.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
-	github.com/huandu/xstrings v1.3.2 // indirect
+	github.com/huandu/xstrings v1.3.3 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
@@ -23,7 +23,8 @@ require (
 	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/peterhellberg/link v1.1.0 // indirect
 	github.com/segmentio/textio v1.2.0 // indirect
-	golang.org/x/net v0.0.0-20221017152216-f25eb7ecb193 // indirect
-	golang.org/x/sys v0.0.0-20221010170243-090e33056c14 // indirect
-	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
+	golang.org/x/exp v0.0.0-20221111204811-129d8d6c17ab // indirect
+	golang.org/x/net v0.2.0 // indirect
+	golang.org/x/sys v0.2.0 // indirect
+	golang.org/x/term v0.2.0 // indirect
 )
