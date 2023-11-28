@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.61.0
+	github.com/grokify/mogo v0.61.1
 	github.com/kennygrant/sanitize v1.2.4
 )
 
