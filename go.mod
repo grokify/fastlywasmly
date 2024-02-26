@@ -2,7 +2,7 @@ module github.com/grokify/fastlywasmly
 
 go 1.21
 
-toolchain go1.22.0
+// toolchain go1.22.0
 
 require (
 	github.com/fastly/cli v1.7.1
