@@ -6,7 +6,7 @@ toolchain go1.22.1
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.63.2
+	github.com/grokify/mogo v0.63.3
 	github.com/kennygrant/sanitize v1.2.4
 )
 
@@ -25,7 +25,7 @@ require (
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/peterhellberg/link v1.2.0 // indirect
 	github.com/segmentio/textio v1.2.0 // indirect
-	golang.org/x/exp v0.0.0-20240222234643-814bf88cf225 // indirect
+	golang.org/x/exp v0.0.0-20240314144324-c7f7c6466f7f // indirect
 	golang.org/x/net v0.22.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/term v0.18.0 // indirect
