@@ -1,12 +1,11 @@
 module github.com/grokify/fastlywasmly
 
 go 1.22
-
-toolchain go1.22.1
+toolchain go1.22.2
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.63.8
+	github.com/grokify/mogo v0.63.11
 	github.com/kennygrant/sanitize v1.2.4
 )
 
@@ -25,9 +24,9 @@ require (
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/peterhellberg/link v1.2.0 // indirect
 	github.com/segmentio/textio v1.2.0 // indirect
-	golang.org/x/exp v0.0.0-20240409090435-93d18d7e34b8 // indirect
-	golang.org/x/net v0.24.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
-	golang.org/x/term v0.19.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
+	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/sys v0.20.0 // indirect
+	golang.org/x/term v0.20.0 // indirect
+	golang.org/x/text v0.15.0 // indirect
 )
