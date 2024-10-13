@@ -12,8 +12,8 @@ require (
 
 require (
 	github.com/fastly/go-fastly/v6 v6.8.0 // indirect
-	github.com/fatih/color v1.16.0 // indirect
-	github.com/getsentry/sentry-go v0.27.0 // indirect
+	github.com/fatih/color v1.17.0 // indirect
+	github.com/getsentry/sentry-go v0.29.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/jsonapi v1.0.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
@@ -25,7 +25,7 @@ require (
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/peterhellberg/link v1.2.0 // indirect
 	github.com/segmentio/textio v1.2.0 // indirect
-	golang.org/x/exp v0.0.0-20241004190924-225e2abe05e6 // indirect
+	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c // indirect
 	golang.org/x/net v0.30.0 // indirect
 	golang.org/x/sys v0.26.0 // indirect
 	golang.org/x/term v0.25.0 // indirect
