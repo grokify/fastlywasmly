@@ -6,7 +6,7 @@ toolchain go1.22.2
 
 require (
 	github.com/fastly/cli v1.7.1
-	github.com/grokify/mogo v0.64.12
+	github.com/grokify/mogo v0.65.0
 	github.com/kennygrant/sanitize v1.2.4
 )
 
